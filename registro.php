@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors',E_ALL);
 
-$db_database=getenv('tabla');
+$db_database=getenv('sys');
 $db_password=getenv('ramses-1234');
 $db_usarname=getenv('ray');
 $mysql_attr_ssl_ca=getenv('DigiCertGlobalRootCA.crt.pem');
