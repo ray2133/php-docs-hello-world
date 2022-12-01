@@ -11,7 +11,7 @@ $conn = mysqli_init();
 if (!$conn) {
     die('Falló mysqli_init');
 }
-mysqli_ssl_set($conn,NULL,NULL, $DigiCertGlobalRootCA, NULL, NULL); 
+mysqli_ssl_set($conn,NULL,NULL, $mysql_attr_ssl_ca, NULL, NULL); 
 
 mysqli_real_connect($conn, "lmatephpdb2-server.mysql.database.azure.com", $db_usarname, $db_password , $db_database, 3306, MYSQLI_CLIENT_SSL);
 
