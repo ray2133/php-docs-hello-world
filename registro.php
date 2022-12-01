@@ -13,7 +13,7 @@ if (!$conn) {
 }
 mysqli_ssl_set($conn,NULL,NULL, $DigiCertGlobalRootCA, NULL, NULL); 
 
-mysqli_real_connect($conn, "lmatephpdb2-server.mysql.database.azure.com", $db_username, $db_password , $db_database, 3306, MYSQLI_CLIENT_SSL);
+mysqli_real_connect($conn, "lmatephpdb2-server.mysql.database.azure.com", $db_usarname, $db_password , $db_database, 3306, MYSQLI_CLIENT_SSL);
 
 if (mysqli_connect_errno())
 {
