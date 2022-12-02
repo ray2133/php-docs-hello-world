@@ -5,7 +5,7 @@ ini_set('display_errors',E_ALL);
 $db_database=getenv('hernandez');
 $db_password=getenv('hernandez-19');
 $db_usarname=getenv('ramses');
-$mysql_attr_ssl_ca=getenv('DigiCertGlobalRootCA.crt.pem');
+$mysql_attr_ssl_ca=getenv('./DigiCertGlobalRootCA.crt.pem');
 
 $conn = mysqli_init(); 
 if (!$conn) {
